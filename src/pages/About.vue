@@ -642,11 +642,16 @@ const startYear = new Date().getFullYear() - 10
     font-size: 0.8rem;
   }
 
+  .story-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 2rem;
+  }
+
   .story-left .story-grid,
   .story-right .story-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: unset;
-    gap: 2rem;
+    grid-template-columns: unset !important;
+    grid-template-areas: unset !important;
   }
 
   .story-section {
@@ -655,6 +660,11 @@ const startYear = new Date().getFullYear() - 10
 
   .story-image {
     aspect-ratio: 16/12;
+    width: 100%;
+  }
+
+  .story-content {
+    width: 100%;
   }
 
   .section-title {
@@ -761,8 +771,15 @@ const startYear = new Date().getFullYear() - 10
     font-size: 0.85rem;
   }
 
+  .story-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 1.5rem;
+  }
+
   .story-image {
     aspect-ratio: 16/12;
+    width: 100%;
   }
 
   .story-section {
@@ -866,9 +883,16 @@ const startYear = new Date().getFullYear() - 10
     line-height: 1.6;
   }
 
+  .story-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 1.5rem;
+  }
+
   .story-image {
     aspect-ratio: 3/4;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    width: 100%;
   }
 
   .quote-text {
@@ -888,10 +912,6 @@ const startYear = new Date().getFullYear() - 10
   .philosophy-section {
     padding: 1.5rem 0;
     border-bottom: 1px solid #2a2a2a;
-  }
-
-  .story-grid {
-    gap: 1.5rem;
   }
 
   .section-title {
@@ -993,6 +1013,16 @@ const startYear = new Date().getFullYear() - 10
   .philosophy-text,
   .story-text {
     font-size: 0.75rem;
+  }
+
+  .story-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 1rem;
+  }
+
+  .story-image {
+    width: 100%;
   }
 
   .specialties-grid {

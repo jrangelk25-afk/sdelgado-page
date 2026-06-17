@@ -6,6 +6,49 @@ declare module '*.vue' {
   export default component
 }
 
+// Extend module resolution for dynamic imports
+declare module '@/pages/Home.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
+declare module '@/pages/Portfolio.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
+declare module '@/pages/About.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
+declare module '@/pages/Shop.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
+declare module '@/pages/Aftercare.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
+declare module '@/pages/Contact.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
+declare module '@/pages/NotFound.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent
+  export default component
+}
+
 // Environment variables
 interface ImportMetaEnv {
   readonly VITE_API_URL: string

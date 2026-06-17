@@ -147,7 +147,7 @@
             <li>
               <p class="text-gray-500 text-xs uppercase tracking-wider mb-1">Especialidades</p>
               <p class="text-gray-400">
-                {{ tattooer.specialties.slice(0, 3).join(', ') }}
+                {{ tattooer.specialties.slice(0, 5).join(', ') }}
               </p>
             </li>
             <li>

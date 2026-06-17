@@ -43,7 +43,7 @@
       <nav 
         class="hidden md:flex items-center gap-8 transition-all duration-300"
         :class="{ 
-          'fixed top-16 left-0 right-0 bottom-0 flex-col gap-4 bg-black/99 p-8 overflow-y-auto !flex z-50 md:relative md:top-auto md:left-auto md:right-auto md:bottom-auto md:bg-transparent md:p-0 md:flex-row md:gap-8 md:!flex md:z-auto': isMobileMenuOpen 
+          'fixed top-[70px] left-0 right-0 max-h-[calc(100vh-70px)] flex-col gap-4 bg-black/99 p-8 overflow-y-auto !flex z-[9999] md:relative md:top-auto md:left-auto md:right-auto md:max-h-none md:bg-transparent md:p-0 md:flex-row md:gap-8 md:!flex md:z-auto': isMobileMenuOpen 
         }"
         role="navigation"
         aria-label="Navegación principal"
@@ -73,7 +73,7 @@
       <transition name="fade">
         <div 
           v-if="isMobileMenuOpen"
-          class="fixed inset-0 bg-black/50 md:hidden z-40"
+          class="fixed inset-0 bg-black/50 md:hidden z-[9998]"
           @click="closeMobileMenu"
         ></div>
       </transition>
