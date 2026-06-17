@@ -52,7 +52,7 @@
     <section class="panel panel-section-6" :ref="(el) => setPanelRef(6, el as HTMLElement)" :style="{ backgroundImage: `url(${sections[6].image})`, backgroundSize: sections[6].bgSize, backgroundPosition: sections[6].bgPosition }">
       <div class="overlay">
         <h2 class="title">{{ sections[6].title }}</h2>
-        <a href="#" @click.prevent="handleBooking" class="cta">{{ sections[6].cta }}</a>
+        <router-link :to="sections[6].link" class="cta">{{ sections[6].cta }}</router-link>
       </div>
     </section>
   </div>
@@ -153,9 +153,10 @@ const getSections = () => {
       },
       {
         title: 'GET IN TOUCH',
+        subtitle: '',
         image: '/img/hero/get-in-touch.webp',
         cta: 'BOOKING',
-        link: '#',
+        link: '/contact',
         bgSize: 'cover',
         bgPosition: 'center center',
         initialOffset: 0,
@@ -242,9 +243,10 @@ const getSections = () => {
       },
       {
         title: 'GET IN TOUCH',
+        subtitle: '',
         image: '/img/hero/get-in-touch.webp',
         cta: 'BOOKING',
-        link: '#',
+        link: '/contact',
         bgSize: 'cover',
         bgPosition: 'center 80%',
         initialOffset: -750,

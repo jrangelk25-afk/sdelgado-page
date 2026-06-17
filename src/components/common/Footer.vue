@@ -9,7 +9,7 @@
             Sdelgado
           </h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Tatuador profesional especializado en diseños únicos y personalizados con más de 10 años de experiencia.
+            Tatuador profesional especializado en diseños únicos y personalizados con más de 6 años de experiencia.
           </p>
           <!-- Social Links -->
           <div class="flex gap-3 mt-2">
