@@ -1,0 +1,23 @@
+# Robots.txt for Sdelgado Portfolio
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*?*
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Bingbot
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://sdelgado.com/sitemap.xml
