@@ -529,73 +529,491 @@ const startYear = new Date().getFullYear() - 10
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 4rem 0;
+    margin-top: 60px;
+  }
+
+  .about-title {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+  }
+
+  .about-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .intro-heading,
+  .philosophy-heading,
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .story-heading {
+    font-size: 1.5rem;
+  }
+
+  .story-text {
+    font-size: 0.9rem;
+  }
+
+  .quote-text {
+    font-size: 0.95rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .specialties-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .specialty-card {
+    padding: 1.5rem;
+  }
+
+  .story-section,
+  .philosophy-section {
+    padding: 3.5rem 0;
+  }
+
+  .specialties-section,
+  .stats-section,
+  .cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .story-grid {
+    gap: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about-hero {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
+    margin-top: 60px;
   }
 
   .about-title {
     font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+
+  .about-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
   }
 
   .container {
     padding: 0 1rem;
   }
 
+  .intro-heading,
+  .philosophy-heading {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .intro-text,
+  .philosophy-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .story-heading {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .story-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .quote-text {
+    font-size: 0.9rem;
+  }
+
+  .quote-author {
+    font-size: 0.8rem;
+  }
+
   .story-left .story-grid,
   .story-right .story-grid {
     grid-template-columns: 1fr;
     grid-template-areas: unset;
+    gap: 2rem;
   }
 
   .story-section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
 
   .story-image {
-    aspect-ratio: 4/3;
-  }
-
-  .story-heading {
-    font-size: 1.3rem;
-  }
-
-  .intro-heading {
-    font-size: 1.3rem;
-  }
-
-  .philosophy-heading {
-    font-size: 1.3rem;
+    aspect-ratio: 16/12;
   }
 
   .section-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
   }
 
-  .cta-title {
-    font-size: 1.5rem;
+  .section-description {
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
   }
 
   .specialties-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .specialty-card {
+    padding: 1.5rem;
+  }
+
+  .specialty-name {
+    font-size: 0.95rem;
   }
 
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-item {
+    padding: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .cta-section {
+    padding: 3rem 0;
+  }
+
+  .cta-title {
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+  }
+
+  .cta-text {
+    font-size: 0.9rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  .philosophy-section,
+  .specialties-section,
+  .intro-section {
+    padding: 2.5rem 0;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+  .about-hero {
+    padding: 2rem 0;
+    margin-top: 55px;
+  }
+
   .about-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .about-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .intro-heading,
+  .philosophy-heading,
+  .section-title {
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+  }
+
+  .intro-text,
+  .philosophy-text {
+    font-size: 0.9rem;
   }
 
   .story-heading {
     font-size: 1.1rem;
   }
 
+  .story-text {
+    font-size: 0.85rem;
+  }
+
+  .story-image {
+    aspect-ratio: 16/12;
+  }
+
+  .story-section {
+    padding: 2rem 0;
+  }
+
+  .specialties-grid {
+    grid-template-columns: 2fr 2fr;
+    gap: 0.75rem;
+  }
+
+  .specialty-card {
+    padding: 1rem;
+  }
+
+  .specialty-name {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    margin: 0 0 0.25rem 0;
+  }
+
+  .section-description {
+    font-size: 0.85rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .stats-grid {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .cta-title {
+    font-size: 1.4rem;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .cta-text {
+    font-size: 0.85rem;
+    margin: 0 0 1.25rem 0;
+  }
+
+  .btn {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 1.5rem 0;
+    margin-top: 50px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+  }
+
+  .about-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .intro-heading,
+  .philosophy-heading {
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    margin: 0 0 0.8rem 0;
+  }
+
+  .intro-text,
+  .philosophy-text {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .story-heading {
+    font-size: 1rem;
+    letter-spacing: 0px;
+  }
+
+  .story-text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .story-image {
+    aspect-ratio: 3/4;
+    margin-bottom: 1rem;
+  }
+
+  .quote-text {
+    font-size: 0.8rem;
+  }
+
+  .quote-author {
+    font-size: 0.75rem;
+  }
+
+  .story-quote {
+    padding: 1rem;
+  }
+
+  .story-section,
+  .intro-section,
+  .philosophy-section {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .story-grid {
+    gap: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .section-description {
+    font-size: 0.8rem;
+    margin: 0 0 1.25rem 0;
+  }
+
+  .specialties-section {
+    padding: 1.5rem 0;
+  }
+
+  .specialties-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .specialty-card {
+    padding: 0.85rem;
+  }
+
+  .specialty-name {
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+  }
+
+  .stats-section {
+    padding: 1.5rem 0;
+  }
+
+  .stats-grid {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    padding: 0.85rem;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 0px;
+  }
+
+  .cta-section {
+    padding: 2rem 0;
+  }
+
+  .cta-title {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .cta-text {
+    font-size: 0.8rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-hero {
+    padding: 1.25rem 0;
+    margin-top: 50px;
+  }
+
+  .about-title {
+    font-size: 1.3rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .intro-heading,
+  .philosophy-heading,
+  .section-title,
+  .story-heading {
+    font-size: 0.95rem;
+  }
+
+  .intro-text,
+  .philosophy-text,
+  .story-text {
+    font-size: 0.75rem;
+  }
+
   .specialties-grid {
     grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+
+  .cta-title {
+    font-size: 1rem;
+  }
+
+  .cta-text {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.7rem;
   }
 }
 </style>
