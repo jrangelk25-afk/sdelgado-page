@@ -5,8 +5,8 @@ Sitio web profesional para Sdelgado, tatuador independiente. Construido con Vue 
 ## 🚀 Quick Start
 
 ### Requisitos
-- Node.js 16+ 
-- npm o yarn
+- Node.js 20.11+ 
+- pnpm
 
 ### Instalación
 
@@ -16,16 +16,16 @@ git clone <repo-url>
 cd sdelgado-web
 
 # Instalar dependencias
-npm install
+pnpm install
 
 # Iniciar servidor de desarrollo
-npm run dev
+pnpm run dev
 
 # Build para producción
-npm run build
+pnpm run build
 
 # Preview de build
-npm run preview
+pnpm run preview
 ```
 
 El sitio estará disponible en `http://localhost:5173/`
@@ -135,16 +135,19 @@ Edita `src/data/content.js` para textos de secciones, FAQs, etc.
 
 ```bash
 # Desarrollo
-npm run dev
+pnpm run dev
 
 # Build
-npm run build
+pnpm run build
 
 # Preview de build
-npm run preview
+pnpm run preview
+
+# Tests
+pnpm run test:run
 
 # Lint (si está configurado)
-npm run lint
+pnpm run lint
 ```
 
 ### Agregar Nuevos Componentes
@@ -170,14 +173,14 @@ npm run lint
 ### Vercel (Recomendado)
 
 ```bash
-npm i -g vercel
+pnpm add -g vercel
 vercel
 ```
 
 ### Netlify
 
 ```bash
-npm i -g netlify-cli
+pnpm add -g netlify-cli
 netlify deploy --prod --dir=dist
 ```
 
@@ -206,14 +209,14 @@ VITE_WHATSAPP_NUMBER=+1234567890
 
 ### "Port 5173 ya está en uso"
 ```bash
-npm run dev -- --port 3000
+pnpm run dev -- --port 3000
 ```
 
 ### Build falla
 ```bash
-rm -rf node_modules package-lock.json
-npm install
-npm run build
+rm -rf node_modules pnpm-lock.yaml
+pnpm install
+pnpm run build
 ```
 
 ### Imágenes no cargan
